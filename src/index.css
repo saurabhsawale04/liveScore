@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+    
+    position: sticky;
+    top: 0;
+    left: auto;
+    z-index: 10;
+    background-color: black;
+}
+
+#root{
+    background-color: rgb(223, 202, 202);
+}
+
+
+.menu{
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bold;
+   
+}
+
+.menu:hover{
+    color: red;
+}
+
+.active_class{
+    color: black;
+    text-decoration: underline;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    grid-gap: 50px;
+}
+
+.card{
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    background-color: rgb(243, 237, 237);
+    box-shadow: 5px 7px rgb(58, 56, 56);
+
+
+}
+
+.card:hover{
+    background-color: white;
+    box-shadow: 5px 7px black;
+}
+
+.head{
+    grid-column: 1/4;
+    text-align: center;
+    padding: 5px;
+}
+
+.smd{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.but:hover{
+    background-color: rgb(4, 4, 114);
+}
+
+.smh{
+    margin-left: auto;
+}
+.p{
+    color: white;
+    background-color: rgba(0, 224, 231, 0.925);
+   
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+
+@media (max-width: 800px)
+{
+    .card{
+        width: 90vw;
+      
+    }
+
 }
